@@ -1,0 +1,7 @@
+base_url: "https://mirror.openshift.com/pub/openshift-v4/clients/ocp"
+bin_version: latest
+cpu_type: amd64
+bin_dir: "/usr/local/bin"
+os_type: "mac"
+client_bin: "openshift-client-{{ os_type }}"
+install_bin: "openshift-install-{{ os_type }}"

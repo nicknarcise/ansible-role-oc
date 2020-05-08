@@ -1,0 +1,11 @@
+---
+- name: "Ensure {{ bin_dir }} directory exists"
+  file:
+    path: "{{ bin_dir }}"
+    state: directory
+
+- name: Download OC Client binary 
+  get_url:
+    url: "{{ base_url }}/{{ bin_version }}/{{ client_bin }}.tar.gz"
+    dest: "{{ bin_dir }}/{{ client_bin }}.tar.gz" 
+    mode: '0755'
